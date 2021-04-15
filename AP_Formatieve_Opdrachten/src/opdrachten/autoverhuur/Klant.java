@@ -1,8 +1,8 @@
-package opdrachten.autoverhuur_en_gameswinkel;
+package opdrachten.autoverhuur;
 
 public class Klant {
     String naam;
-    double kortingsPercentage;
+    double kortingsPercentage = 0;
 
     public Klant(String naam) {
         this.naam = naam;
@@ -18,9 +18,6 @@ public class Klant {
 
     @Override
     public String toString() {
-        return "Klant{" +
-                "naam='" + naam + '\'' +
-                ", kortingsPercentage=" + kortingsPercentage +
-                '}';
+        return "op naam van: " + naam + " (korting: " + kortingsPercentage + "%)\n";
     }
 }

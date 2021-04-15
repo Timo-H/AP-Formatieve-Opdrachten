@@ -1,4 +1,4 @@
-package opdrachten.autoverhuur_en_gameswinkel;
+package opdrachten.autoverhuur;
 
 public class Auto {
     String type;
@@ -19,9 +19,6 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Auto{" +
-                "type='" + type + '\'' +
-                ", prijsPerDag=" + prijsPerDag +
-                '}';
+        return type + " met prijs per dag: " + prijsPerDag + "\n";
     }
 }
